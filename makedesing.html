@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Desing page </title>
+</head>
+
+<body>
+    <!-- Start Header/Navigation -->
+    <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+		<div class="container">
+			<!-- Logo and Tag Line -->
+			<div class="logo-and-tagline d-flex align-items-center">
+				<a class="navbar-brand" href="index.html">TAG LINE<span>.</span></a>
+			</div>
+
+			<!-- Toggle Button for Mobile -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+				aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Navigation Links -->
+			<div class="collapse navbar-collapse" id="navbarsFurni">
+				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li><a class="nav-link" href="shope.html">Shop</a></li>
+					<li><a class="nav-link" href="about.html">About us</a></li>
+					<li><a class="nav-link" href="Services.html">Services</a></li>
+					<li><a class="nav-link" href="connect.html">Contact us</a></li>
+				</ul>
+
+				<!-- Call-to-Action Links -->
+				<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+					<li><a class="nav-link" href="Login.html"><img src="img/user.svg"></a></li>
+					<li><a class="nav-link" href="cart.html"><img src="img/cart.svg"></a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <!-- End heder -->
+    <br><br>
+    <div class="container">
+        <img id="show-img" class="show-img-click" src="img/moderndesigne1.JPG" alt="Design 1">
+
+        <div class="row">
+
+            <!-- القسم الأول (6 أعمدة) -->
+            <div class="col-12 col-md-6">
+                <h2>Modern designs</h2>
+                <p>In this section we present modern designs for kitchens.
+                    <br>You can choose the appropriate design and determine the space of your kitchen,
+                    then after 6 months you will receive the kitchen.
+                </p>
+                <div id="imagedesignesize">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <figure>
+                                    <img src="img/moderndesigne1.JPG" alt="Design 1">
+                                    <figcaption>
+                                        <h4>Design 1</h4>
+                                        <p>Approximate Price: $X</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-4">
+                                <figure>
+                                    <img src="img/moderndesgin3.jpg" alt="Design 2">
+                                    <figcaption>
+                                        <h4>Design 2</h4>
+                                        <p>Approximate Price: $Y</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-4">
+                                <figure>
+                                    <img src="img/moderndessgine2.jpg" alt="Design 3">
+                                    <figcaption>
+                                        <h4>Design 3</h4>
+                                        <p>Approximate Price: $Z</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- القسم الثاني (6 أعمدة) -->
+            <div class="col-12 col-md-6">
+                <h2>Traditional kitchens</h2>
+                <p>In this section, we present traditional kitchen designs.
+                    <br> You can choose the appropriate design and define your kitchen space.
+                    Then after 6 months you will receive the kitchen
+                </p>
+
+                <div id="imagedesignesize">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <figure class="img-hover" onclick="show('img/moderndesigne1.JPG')">
+                                    <img src="img/moderndesigne1.JPG" alt="Design 1">
+                                    <figcaption>
+                                        <h4>Design 1</h4>
+                                        <p>Approximate Price: $X</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-4">
+                                <figure>
+                                    <img class="img-hover" src="img/moderndesgin3.jpg"
+                                        onclick="show('img/moderndesgin3.jpg')" alt="Design 2">
+                                    <figcaption>
+                                        <h4>Design 2</h4>
+                                        <p>Approximate Price: $Y</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-4">
+                                <figure>
+                                    <img class="img-hover" src="img/moderndessgine2.jpg"
+                                        onclick="show('img/moderndessgine2.jpg')" alt="Design 3">
+                                    <figcaption>
+                                        <h4>Design 3</h4>
+                                        <p>Approximate Price: $Z</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- العمود (12 أعمدة) -->
+            <div class="col-md-12" style="text-align: center;">
+                <h2>Order your dream kitchen</h2>
+                <p>By clicking on the button,
+                    <br> you can enter the design number you want and the size of your kitchen,
+                    <br> and get the total price for the kitchen without appliances
+                </p>
+                <br>
+                <p><a href="Bill.html" class="btn">Start reserving the kitchen</a></p>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <!--Footer start-->
+    <div class="row" id="footer" style="margin-left:0px;">
+        <div class="col-lg-3">
+            <div class="footerheads">Call & message Us</div>
+            <span class="halfribbon"></span>
+            <br>
+            <div id="footertxt" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Telphone Number :
+                <a href=" tel:33338890 ">33338890</a>
+            </div>
+            <div id="footertxt" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Email : <a
+                    href="TagLineKitchens@company.com">TagKit@company.com</a>
+            </div>
+            &nbsp;
+        </div>
+        <div class="col-lg-3">
+            <div class="footerheads">We offer</div>
+            <span class="halfribbon"></span>
+            <br>
+            <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;"> Design</a><br>
+            <a href="shope.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Kitchens Furniture</a><br>
+            <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Kitchens Fixsing</a><br>
+            <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Offers</a><br>
+            <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Service</a><br>
+            &nbsp;
+        </div>
+        <div class="col-lg-3">
+            <div class="footerheads">Follow Us</div>
+            <span class="halfribbon"></span>
+            <br>
+            <!-- Add icon library -->
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!-- Add font awesome icons -->
+            <div class="col-lg-2">
+                <a href="#" class="fa fa-instagram"
+                    style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+            </div>
+            <div class="col-lg-2">
+                <a href="#" class="fa fa-facebook"
+                    style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+            </div>
+            <div class="col-lg-2">
+                <a href="#" class="fa fa-youtube"
+                    style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+            </div>
+            <div class="col-lg-2">
+                <a href="#" class="fa fa-twitter"
+                    style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+            </div>
+
+
+
+        </div>
+        <div class="col-lg-3">
+            <div class="footerheads">Worktimes</div>
+            <span class="halfribbon"></span>
+            <br>
+            <ul>
+
+                <li id="footertxt"> <i
+                        style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">9:00am-12:00am</i></li>
+                <li id="footertxt"><i style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Closed on
+                        Friday</i></li>
+            </ul>
+            &nbsp;
+        </div>
+    </div>
+    <!--Footer end-->
+    <!--CC-->
+    <div class="cc">
+        <small class="cc"> Copyright by TagLineKitchens © 2023
+        </small>
+    </div>
+    <!--CC End-->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- End Footer Section -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        function show(url) {
+            let img = document.getElementById("show-img");
+            img.src = url;
+            img.style.display = "block";
+        }
+    </script>
+</body>
+</body>
+
+</html>

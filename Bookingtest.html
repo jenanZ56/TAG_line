@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="favicon.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="css/tiny-slider.css" rel="stylesheet">
+		<link href="css/Bookingtext.css" rel="stylesheet">
+		<title>Booking-form</title>
+        <style>
+            
+.booking-form-container {
+	background-color: #a1b6b4;
+	opacity:0.9;
+    width:50%;
+    padding: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.resetbtn{
+	font-size:20px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.resetbtn:hover{
+    background-color: #45a049;
+}
+
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+        </style>
+	</head>
+
+	<body>
+		<button onclick="topFunction()" id="scrolltotop" title="Go to top"><span class="glyphicon glyphicon-chevron-up"><i class="fa fa-angle-up" style="font-size:36px"></i></button>
+            <div class="containeer">
+                <div class="container-main2">
+
+		<!-- Start Header/Navigation -->
+		<!-- Start Header/Navigation -->
+	<nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+		<div class="container">
+			<!-- Logo and Tag Line -->
+			<div class="logo-and-tagline d-flex align-items-center">
+				<a class="navbar-brand" href="index.html">TAG LINE<span>.</span></a>
+			</div>
+
+			<!-- Toggle Button for Mobile -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+				aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Navigation Links -->
+			<div class="collapse navbar-collapse" id="navbarsFurni">
+				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li><a class="nav-link" href="shope.html">Shop</a></li>
+					<li><a class="nav-link" href="about.html">About us</a></li>
+					<li><a class="nav-link" href="Services.html">Services</a></li>
+					<li><a class="nav-link" href="connect.html">Contact us</a></li>
+				</ul>
+
+				<!-- Call-to-Action Links -->
+				<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+					<li><a class="nav-link" href="Login.html"><img src="img/user.svg"></a></li>
+					<li><a class="nav-link" href="cart.html"><img src="img/cart.svg"></a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+		<!-- End Header/Navigation -->
+
+		<!-- Start Hero Section -->
+			
+		<!-- End Hero Section -->
+        <center>
+            
+		<div class="booking-form-container">
+		
+			<span style="float:left;"><a href="Fixingpage.html"> <i  class="fa fa-angle-left" style="
+				border: none;
+				outline: none;
+				background-color: #4caf50;
+				color: white;
+				cursor: pointer;
+				padding: 15px;
+				border-radius: 10px;
+				font-size: 18px;
+				aspect-ratio: 2/1;"></i></a></span>	
+		
+			<h1 id="dynamicHeading"style="margin-right:65px">Booking</h1>
+			<div id="error-message" class="error-message"></div>
+            <form id="booking-form">
+				
+                <bold></bold><label for="customerName">Customer Name:</label></bold>
+                <input type="text" id="customerName" name="customerName" required>
+				<br>
+                <label for="contactPhone">Contact Phone:</label>
+                <input type="tel" id="contactPhone" name="contactPhone" required>
+				<br>
+                <label for="contactEmail">Contact Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+				<br>
+                <label for="Address">Your Home Address:</label>
+                <input type="text" id="Address" name="Address" required>
+                <br>
+                <label for="preferredDateTime">Preferred Date and Time:</label>
+                <input type="datetime-local" id="preferredDateTime" name="preferredDateTime" required>
+				<br>
+                <label for="Specify">Specify the problem</label>
+                <textarea id="Specify" name="Specify" required></textarea>
+				<br>
+                <label for="additionalComments">Additional Comments:</label>
+                <textarea id="additionalComments" name="additionalComments"></textarea>
+				<br>
+                <div>
+					
+					<button type="reset" class="resetbtn">
+						<i class="fas fa-sync-alt reset-icon" ></i> Reset
+					</button>
+				
+					
+                <button type="button" class="resetbtn" onclick="submitBooking()" style="padding:10px; margin-top: 15px; width:30%;"><i class="fa fa-address-book" aria-hidden="true"></i>  Book</button>
+                
+            </div>
+			</form>
+        
+        
+                
+            </form>
+        </div>
+		</center>
+
+		
+
+
+		<!-- Start Footer Section -->
+		 <!--Footer start-->
+		 <div class="row" id="footer" style="margin-left:0px;">
+			<div class="col-lg-3">
+				<div class="footerheads">Call & message Us</div>
+				<span class="halfribbon"></span>
+				<br>
+				<div id="footertxt" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Telphone Number : <a href=" tel:33338890 ">33338890</a></div>
+				<div id="footertxt" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Email : <a href="TagLineKitchens@company.com">TagKit@company.com</a>
+				</div>
+				&nbsp;
+			</div>
+			<div class="col-lg-3">
+				<div class="footerheads">We offer</div>
+				<span class="halfribbon"></span>
+				<br>
+				  <a href="sales.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;"> Design</a><br>
+				<a href="sales.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Kitchens Furniture</a><br>
+				  <a href="sales.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Kitchens Fixsing</a><br>
+				<a href="Rentals.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Offers</a><br>
+				<a href="ServCenter.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Service</a><br>
+				&nbsp;
+			</div>
+			<div class="col-lg-3">
+				<div class="footerheads">Follow Us</div>
+				<span class="halfribbon"></span>
+				<br>
+				<!-- Add icon library -->
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+			   <!-- Add font awesome icons -->
+				<div class="col-lg-2">
+				<a href="#"  class="fa fa-instagram" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+				  </div> <div class="col-lg-2">
+				<a href="#" class="fa fa-facebook" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+				 </div> <div class="col-lg-2">
+				<a href="#" class="fa fa-youtube" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+				</div><div class="col-lg-2">
+				<a href="#" class="fa fa-twitter" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+		</div>
+			 
+				
+				<br><br>
+			</div>
+			<div class="col-lg-3">
+				<div class="footerheads">Worktimes</div>
+				<span class="halfribbon"></span>
+				<br>
+				<ul>
+				
+					<li id="footertxt"> <i style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">9:00am-12:00am</i></li>
+					<li id="footertxt"><i  style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Closed on Friday</i></li>
+				</ul>
+				&nbsp;
+			</div>
+		</div>
+		<!--Footer end-->
+		
+	</div>
+</div>
+</div>
+</div>
+</div>
+		<!-- End Footer Section -->	
+
+
+		<script src="js/bootstrap.bundle.min2.js"></script>
+		<script src="js/tiny-slider2.js"></script>
+		<script src="js/custom2.js"></script>
+		
+	</body>
+
+</html>

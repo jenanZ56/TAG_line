@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style3.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+    <title>Bill page </title>
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <h1>Kitchen Price Calculator</h1>
+
+            <form id="kitchenForm">
+                <label for="clientName">Enter your name</label>
+                <input type="text" id="clientName" required>
+
+                <label for="clientNumber">Enter your number</label>
+                <input type="number" id="clientNumber" required>
+
+                <label for="kitchenType">Kitchen Type</label>
+                <input type="text" id="kitchenType" required>
+
+                <label for="numDrawers">Number of Drawers</label>
+                <input type="number" id="numDrawers" required>
+
+                <label for="numCabinets">Number of Cabinets</label>
+                <input type="number" id="numCabinets" required>
+
+                <label for="kitchenLength">Kitchen Length (in meters)</label>
+                <input type="number" id="kitchenLength" required>
+
+                <label for="kitchenWidth">Kitchen Width (in meters)</label>
+                <input type="number" id="kitchenWidth" required>
+            </form>
+
+
+            <button type="button" onclick="calculatePrice()">Calculate Kitchen Price</button>
+            <br>
+            <button onclick="generatePDF()">Print</button>
+            <table id="priceTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Information</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- الجدول سيتم ملؤه بواسطة JavaScript -->
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- أكواد الـ script -->
+        <script src="js/scrpit.js"></script>
+
+        <!--Footer start-->
+        <div class="row" id="footer" style="margin-left:0px;">
+            <div class="col-lg-3">
+                <div class="footerheads">Call & message Us</div>
+                <span class="halfribbon"></span>
+                <br>
+                <div id="footertxt" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Telphone
+                    Number : <a href=" tel:33338890 ">33338890</a></div>
+                <div id="footertxt" style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Email : <a
+                        href="TagLineKitchens@company.com">TagKit@company.com</a>
+                </div>
+                &nbsp;
+            </div>
+            <div class="col-lg-3">
+                <div class="footerheads">We offer</div>
+                <span class="halfribbon"></span>
+                <br>
+                <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;"> Design</a><br>
+                <a href="shope.html" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Kitchens Furniture</a><br>
+                <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Kitchens Fixsing</a><br>
+                <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Offers</a><br>
+                <a href="#" style="font-size:20px;text-shadow:2px 2px 4px #000000;">Service</a><br>
+                &nbsp;
+            </div>
+            <div class="col-lg-3">
+                <div class="footerheads">Follow Us</div>
+                <span class="halfribbon"></span>
+                <br>
+                <!-- Add icon library -->
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <!-- Add font awesome icons -->
+                <div class="col-lg-2">
+                    <a href="#" class="fa fa-instagram"
+                        style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="#" class="fa fa-facebook"
+                        style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="#" class="fa fa-youtube"
+                        style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="#" class="fa fa-twitter"
+                        style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;"></a>
+                </div>
+
+
+
+            </div>
+            <div class="col-lg-3">
+                <div class="footerheads">Worktimes</div>
+                <span class="halfribbon"></span>
+                <br>
+                <ul>
+
+                    <li id="footertxt"> <i
+                            style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">9:00am-12:00am</i>
+                    </li>
+                    <li id="footertxt"><i style="font-size:20px;color:#f9bf29;text-shadow:2px 2px 4px #000000;">Closed
+                            on Friday</i></li>
+                </ul>
+                &nbsp;
+            </div>
+        </div>
+        <!--Footer end-->
+        <!--CC-->
+        <div class="cc">
+            <small class="cc"> Copyright by TagLineKitchens © 2023
+            </small>
+        </div>
+        <!--CC End-->
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+        <!-- End Footer Section -->
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/tiny-slider.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</body>
+
+</html>
