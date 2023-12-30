@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Furno-Kitchens Furniture </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="MainStyle.css">
+</head>
+<body>
+ <button onclick="topFunction()" id="scrolltotop" title="Go to top"><span class="glyphicon glyphicon-chevron-up"></button>
+    <div class="containeer">
+        <div class="container-main2">
+
+
+            <!---------Navbar---------------------------------------------------------->
+            <div class="container navbg hidden-xs">
+                <nav class="navbar">
+    
+    
+                    <div class="nav navbar-nav navbar-left"><a href="HomePage.html" tabindex="0" accesskey="H"
+                            title="Home Page" class="navbar-brand active homepager1">Homepage</a></div>
+                    <ul class="nav navbar-nav navbar-right">
+    
+                        <li class="dropdown">
+    
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="Sales.html">Kitchens Furniture<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="mddropdownlinks" href="Sales2.html">Tables Desks chairs</a></li>
+                                <li><a class="mddropdownlinks" href="Sales1.html">Storage Drawers</a></li>
+								       <li><a class="mddropdownlinks" href="Sales1.html">Cabinets & Cupboards</a></li>
+                            </ul>
+                        </li>
+                       
+                </nav>
+            </div>
+			 <div class="container-main2">
+
+
+
+                <div class="container visible-xs hidden-lg hidden-md hidden-sm"
+                style="position: sticky;top: 5px;z-index: 999; height: 50px;">
+                <nav class="navbar navbar-inverse visible-xs hidden-lg hidden-md hidden-sm">
+                    <div class="container xsbg">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                            <div class="logo-center navbar-brand homepager1">
+                                <a href="HomePage.html">
+                                    <img src="iconMyKit.avif" style="width: 100%; max-height: 45px; margin-top: -11px;"></a>
+
+
+                            </div>
+                        </div>
+			<!--------------form------------------------------------------------------------------------------->
+						  <form id="formdisplay" method="post">
+                    <button style="float: right; margin-bottom: 5px;" onclick="FormPopOut()"><span
+                            class="glyphicon glyphicon-remove"></span></button>
+                    <div id="formname">Enter the Kitchen information</div>
+                    <div class="form-group formheads">
+                        <label id="carname"></label>
+                    </div>
+                    <div class="form-group formheads">
+                        <label>Full Name</label>
+                        <input required name="FullName" type="text" class="form-control"
+                            placeholder="Please enter your Full name">
+                    </div>
+                    <div class="form-group formheads">
+                        <label>Email address</label>
+                        <input required type="email" name="Email" class="form-control" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group formheads">
+                        <label>Kitchen width in meters</label>
+                        <input required type="text" name="width" class="form-control" placeholder="000m">
+                    </div>
+					<div class="form-group formheads">
+                        <label>Kitchen length in meters</label>
+                        <input required type="text" name="lenth" class="form-control" placeholder="000m">
+                    </div>
+					<div class="form-group formheads">
+                        <label>kitchen location</label>
+                        <input required type="text" name="Area" class="form-control" placeholder="Extranal/ internal">
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="sumbitter();">Submit</button>
+                </form>
+				 &nbsp; <br><br>
+				 <center>
+                    <div class="headers">Sales</div>
+                </center>
+                <br><br><br>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div id="mycarouselbg4">
+                                <div class="testdriveline">
+                                    <a href="#" onclick="nametaker(cname='Land Cruiser 2022'); FormPopUp();"><span class="Test-drive">Test Drive Now</span></a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+                            <div id="mycarouselbg5">
+                                <div class="testdriveline">
+                                <a href="#" onclick="nametaker(cname='Range Rover 2022'); FormPopUp();"><span class="Test-drive">Test Drive Now</span></a>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div id="mycarouselbg6">
+                                <div class="testdriveline">
+                                    <a href="#" onclick="nametaker(cname='Lexus LS500 2022'); FormPopUp();"><span class="Test-drive">Test Drive Now</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+</body>
+</html>
